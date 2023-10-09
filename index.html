@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      .container{
+                  display: flex;
+                }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./index.js"></script>
+    
+  </head>
+
+  <body>
+    <div class="container">
+  
+      <div class="jumbotron">
+      <h2>Victor Ananth (Net ID: vr23, CS437 - IOT - Lab 2 - Edge Networking)</h2>
+
+      <!-- <video class="center" width="600" height="400" controls>
+        <source src="samplevid.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video> -->
+      <img src="./media/default_background.png" id='pics' width="500" height="400">
+    </div> 
+  
+  </div>
+
+  <div class="row" >
+    <div class="container">
+        <div class="jumbotron text-center col-md-6" style="background-color:#D8D9DA;">
+            <span>&nbsp;&nbsp;</span> 
+            <span id="upArrow" style='font-size:50px; color:grey;'onclick="sendfw()">&#8679;</span>
+            <br>
+            <span id="leftArrow" style='font-size:45px; color:grey;' onclick="sendlt()">&#8678;</span>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+            <span id="rightArrow" style='font-size:45px; color:grey;' onclick="sendrt()">&#8680;</span>
+            <br>
+            <span>&nbsp;&nbsp;</span> 
+            <span id="downArrow" style='font-size:50px; color:grey;' onclick="sendbk()">&#8681;</span>
+            <br>
+            <button id="stop" class="btn btn-danger" onclick="stop()">Stop</button>
+        </div>
+
+        <div class="jumbotron text-left col-md-6"  style="background-color:#D8D9DA;">
+
+          <p> 
+           <span id="moving_dot" style="color:green">&bull;</span> <b>Moving:</b> <span id="moving" style="color:blue; font-weight: bold;"><b>Stopped</b> </span>
+           <br>
+           <span id="turning_dot" style="color:green">&bull;</span> <b>Turning:</b> <span id="turning" style="color:blue; font-weight: bold;"> <b>No</b></span>
+           <br>
+           <span id="speed_dot" style="color:green">&bull;</span> <b>Speed:</b>  <span id="speed" style="color:blue; font-weight: bold;"><b>0.0</b></span>  
+           <br>
+           <span id="distance_dot" style="color:green">&bull;</span> <b>Distance Traveled:</b>  <span id="distance" style="color:blue; font-weight: bold;"><b>0.0</b></span>
+           <br>
+           <span id="temprature_dot" style="color:green">&bull;</span> <b>Temperature of the Pi: </b> <span id="temp" style="color:blue; font-weight: bold;"><b>0.0</b></span>
+
+           
+          </p>  
+        </div>
+    </div>
+</div>
+
+  </body>
+</html>
+
